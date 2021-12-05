@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**genearl*/
+
+body{
+    @apply font-ubuntu;
+}
+
+html {
+    @apply duration-500;
+}
+
+/* width */
+::-webkit-scrollbar {
+    @apply w-1.5 ;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    @apply bg-white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    @apply bg-indigo-700;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-indigo-800;
+}
+
+
+
+
+
+/*btn*/
+.btn-primary{
+    @apply text-white p-3 text-center rounded-md bg-indigo-600 hover:bg-indigo-700;
+}
+
+.btn-secondary{
+    @apply text-white p-3 text-center rounded-md bg-green-400 hover:bg-green-500;
+}
+
+
+.sm-btn-secondary{
+    @apply text-white px-3 py-1.5 text-center rounded bg-green-400 hover:bg-green-500;
+}
+
+
+
+
+/*title*/
+
+.title{
+    @apply mx-auto font-semibold text-center text-indigo-700 text-xl md:text-5xl;
+}
+
+.description{
+    @apply mx-auto text-gray-800 mt-2 mb-5 text-center text-lg md:text-xl;
+}
+
+
+/**form **/
+.form-input
+{
+    @apply text-gray-600 focus:outline-none focus:ring-indigo-700 focus:ring-2 focus:ring-opacity-50 my-2 w-full border-gray-300 rounded border p-2 ;
+}
+
+.form-error{
+    @apply text-xs text-red-500;
+}
+
+/*sidebar**/
+.sidebar{
+    @apply fixed z-10 shadow-lg flex duration-200 bottom-0  left-0 items-center  bg-white p-1.5   
+    flex-row w-full max-w-full h-16 overflow-x-auto
+    sm:w-16    sm:flex-col sm:h-full  sm:max-h-full sm:py-7 md:overflow-x-hidden md:overflow-y-auto;
+}
+
+.sidebarDark{
+    @apply fixed z-10 shadow-lg flex duration-200 bottom-0  left-0 items-center  bg-gray-800 p-1.5   
+    flex-row w-full max-w-full h-16 overflow-x-auto
+    sm:w-16    sm:flex-col sm:h-full  sm:max-h-full sm:py-7 md:overflow-x-hidden md:overflow-y-auto;
+}
+
+.sidebar{
+    flex: 1 1 auto;
+}
+/***************************************/
+sidebar .sidebar-link , sidebar .sidebar-btn{
+    @apply rounded-md p-3 flex-shrink-0 w-12 h-12 mx-3 sm:mx-0  sm:my-3;
+}
+/***************************************/
+.sidebar  a:active
+    {
+    @apply bg-gray-100;
+}
+
+.sidebarDark  a:active
+    {
+    @apply bg-gray-700;
+}
+
+/***************************************/
+.sidebar .sidebar-link-icon ,.sidebarDark .sidebar-link-icon{
+    @apply sm:mx-auto mb-40 sm:w-8;
+}
+
+/***************************************/
+.sidebar .sidebar-profile-link{
+    @apply rounded-full p-2 flex-shrink-0 text-center w-10 h-10 mx-4 sm:mx-0 font-bold text-white bg-gray-900 sm:my-3;
+}
+
+.sidebarDark .sidebar-profile-link{
+    @apply rounded-full p-2 flex-shrink-0 text-center w-10 h-10 mx-4 sm:mx-0 font-bold text-white bg-gray-700 sm:my-3;
+}
+/***************************************/
+
+/*about page (founders big creen) */
+
+    
+.intro{
+    @apply py-20 text-2xl sm:py-60 sm:text-6xl text-white bg-gradient-to-br from-purple-700 to-indigo-600;
+}
+
+.dev-image-cont{
+    @apply overflow-hidden  max-h-40 h-40 w-40 rounded-lg ;
+}
+/************************* */
+.dev-box{
+    @apply shadow-lg rounded-lg  p-7 w-full  border-2   md:flex items-start;
+}
+.dev-box-dark{
+    @apply shadow-xl rounded-lg  p-7 w-full  border-2 border-gray-800 bg-gray-800   md:flex items-start;
+}
+/************************* */
+.dev-img{
+    @apply rounded-lg duration-300 transform hover:scale-125 h-auto w-full  ;
+}
+
+.dev-name{
+    @apply font-bold text-2xl  sm:text-xl text-left mt-0 mb-1 md:mb-2 text-purple-700 ;
+}
+
+/************************* */
+.dev-quote{
+    @apply text-gray-600  mx-1 my-3  text-left ;
+}
+
+.dev-quote-dark{
+    @apply text-gray-300  mx-1 my-3  text-left ;
+}
+/************************* */
+
+.dev-social-link{
+    @apply p-1 rounded bg-gradient-to-br from-purple-700 to-indigo-600 hover:from-indigo-600 hover:to-purple-700  duration-500 mx-2 ;
+}
+
+
+/*chat**/
+.chat-top-bar{
+    @apply inline-flex items-center justify-center rounded-full h-10 w-10 transition duration-500 ease-in-out text-gray-500 hover:bg-gray-300 focus:outline-none;
+}
+
+.profile-box{
+    @apply flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0;
+}
+
+.msg{
+    @apply relative ml-3 text-sm bg-white my-5 py-2 px-4 shadow rounded-xl;
+}
+
+.msg-time{
+    @apply absolute text-xs bottom-0 right-0 -mb-5 mr-2 text-gray-500;
+}
+
+.my-msg {
+    @apply flex items-center justify-start my-5 flex-row-reverse;
+}

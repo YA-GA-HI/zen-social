@@ -1,0 +1,25 @@
+
+/**animations**/
+.fade-in-down{
+    animation:fadeInDown 2s ;
+}
+
+
+/* #navbar .dropdown ul {
+    display: none;
+    position: absolute;
+    left: 10px;
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+}
+
+#navbar .dropdown:hover > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+} */

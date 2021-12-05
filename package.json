@@ -1,0 +1,25 @@
+{
+  "name": "zen-doctor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-tai": "tailwindcss build assets/tailwind/style.css -o assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YA-GA-HI/zen-doctor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YA-GA-HI/zen-doctor/issues"
+  },
+  "homepage": "https://github.com/YA-GA-HI/zen-doctor#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "tailwindcss": "^2.2.16"
+  }
+}
